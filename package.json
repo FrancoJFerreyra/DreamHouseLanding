@@ -30,6 +30,7 @@
     "css-minimizer-webpack-plugin": "^4.0.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.27.0",
@@ -80,5 +81,8 @@
     "stats": "webpack --config configuration/webpack.prod.config.js --mode=production --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json"
   },
   "target": "web",
-  "dependencies": {}
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.1"
+  }
 }

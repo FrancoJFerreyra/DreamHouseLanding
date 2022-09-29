@@ -1,0 +1,50 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+#logo {
+  display: block;
+  text-indent: -1000px;
+  padding: 0;
+  font-size: 0;
+  height: 1.875rem;
+  width: 9.3125rem;
+  background-image: url(../images/design/pageLogo.svg);
+}
+header {
+  background-image: url(../images/design/backgroundHeader.png);
+  background-size: cover;
+}
+.header__container {
+  padding-top: 1.875rem;
+  padding-bottom: 4.5rem;
+}
+.header__content--container {
+  justify-content: center;
+}
+.title__container {
+  padding-top: 4rem;
+  text-align: center;
+  h1 {
+    padding-bottom: 0.9375rem;
+    font-weight: 700;
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+}
+.header__content--nav {
+  justify-content: center;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+}
+.header__search {
+  text-align: center;
+}
+@include media-breakpoint-up(md) {
+  .header__container {
+    padding-bottom: 9.0625rem;
+  }
+  .title__container {
+    padding-top: 9.0625rem;
+  }
+}

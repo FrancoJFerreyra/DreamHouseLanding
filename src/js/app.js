@@ -1,6 +1,6 @@
-import '../scss/app.scss';
+import '../scss/index.scss';
 
 /* Your JS Code goes here */
 
 /* Demo JS */
-import './demo.js';
+import '../../node_modules/bootstrap/dist/js/bootstrap';
