@@ -16,7 +16,7 @@
     <div class="container-xl header__container">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a id="logo" class="navbar-brand" href="#">Easy Housing</a>
+          <a class="logo navbar-brand" href="#">Easy Housing</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -72,13 +72,13 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-8">
+        <div class="col-lg-10 col-xl-8">
           <div class="header__search--background">
             <div class="row header__search">
-              <div class="col-sm-6 col-lg-3 header__search--input">
+              <div class="col-sm-6 col-md-3 header__search--input">
                 <input type="text" class="form-control" placeholder="Enter keyword">
               </div>
-              <div class="col-sm-6 col-lg-3 header__propertyType--select">
+              <div class="col-sm-6 col-md-3 header__search--select">
                 <select class="form-select">
                   <option selected>Property type</option>
                   <option value="1">One</option>
@@ -86,7 +86,7 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="col-sm-6 col-lg-2 header__location--select">
+              <div class="col-sm-6 col-md-2 header__search--select">
                 <select class="form-select">
                   <option selected>Location</option>
                   <option value="1">One</option>
@@ -94,7 +94,7 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="col-sm-6 col-lg-2 header__price--select">
+              <div class="col-sm-6 col-md-2 header__search--select">
                 <select class="form-select">
                   <option selected>Price</option>
                   <option value="1">One</option>
@@ -102,7 +102,7 @@
                   <option value="3">Three</option>
                 </select>
               </div>
-              <div class="col-lg-2 header__search--btn">
+              <div class="col-md-2 header__search--btn">
                 <a class="btn btn-secondary" href="#">Search</a>
               </div>
             </div>
@@ -422,8 +422,10 @@
             <div class="card-body section4__card--body">
               <h4 class="card-title">Jenny White</h4>
               <p class="card-text">Sunshine</p>
-              <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
-                    alt="PhoneIcon"></span>Call : 9635872558</p>
+              <a href="#">
+                <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
+                      alt="PhoneIcon"></span>Call : 9635872558</p>
+              </a>
             </div>
           </div>
         </div>
@@ -435,8 +437,10 @@
             <div class="card-body section4__card--body">
               <h4 class="card-title">John White</h4>
               <p class="card-text">Sunshine</p>
-              <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
-                    alt="PhoneIcon"></span>Call : 9635872558</p>
+              <a href="#">
+                <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
+                      alt="PhoneIcon"></span>Call : 9635872558</p>
+              </a>
             </div>
           </div>
         </div>
@@ -448,8 +452,10 @@
             <div class="card-body section4__card--body">
               <h4 class="card-title">Merry Rose</h4>
               <p class="card-text">Sunshine</p>
-              <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
-                    alt="PhoneIcon"></span>Call : 9635872558</p>
+              <a href="#">
+                <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
+                      alt="PhoneIcon"></span>Call : 9635872558</p>
+              </a>
             </div>
           </div>
         </div>
@@ -461,8 +467,10 @@
             <div class="card-body section4__card--body">
               <h4 class="card-title">Alex Roy</h4>
               <p class="card-text">Sunshine</p>
-              <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
-                    alt="PhoneIcon"></span>Call : 9635872558</p>
+              <a href="#">
+                <p class="card-text section4__card--phone"><span><img src="./images/content/phoneIcon.svg"
+                      alt="PhoneIcon"></span>Call : 9635872558</p>
+              </a>
             </div>
           </div>
         </div>
@@ -472,106 +480,150 @@
   <section id="section5">
     <div class="section5__background">
       <div class="container-xl">
-        <div class="row">
-          <div class="col-md-4 section5__title--container">
-            <p class="subtitles__paragraphs">Let’s Take A Tour</p>
-            <h2>Search Property Smarter,
-              Quicker & Anywhere</h2>
-          </div>
-          <div>
-            <img src="" alt="">
-            <p>Play video</p>
+        <div class="row section5__header">
+          <div class="col-sm-6 col-lg-4">
+            <div class="section5__header--container">
+              <div class="section5__title--container">
+                <p class="subtitles__paragraphs">Let’s Take A Tour</p>
+                <h2>Search Property Smarter,
+                  Quicker & Anywhere</h2>
+              </div>
+              <div class="section5__playVideo--container">
+                <a href="#"><img src="./images/content/playVideoIcon.svg" alt="PlayVideo">
+                  <p>Play video</p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <div class="container-xl">
-      <div class="row">
+      <div class="row section5__opinion--container">
         <div class="col-md-10">
-          <img src="" alt="">
-          <div>
-            <!-- icon -->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam sequi natus, nam ipsum officia, similique
-              placeat vitae explicabo doloribus ea unde porro velit? Id architecto quos, molestiae minus nesciunt ullam!
-            </p>
-            <!-- icon -->
+          <div class="section5__opinion--content">
+            <div class="section5__opinion--img">
+              <img src="./images/content/section5__opinionImg.png" alt="Girl">
+              <h2>Maria Crist</h2>
+            </div>
+            <div class="section5__opinion--paragraph">
+              <div class="section5__quotes--background">
+                <img src="./images/content/section5__quotes.svg" alt="Quotes">
+              </div>
+              <a href="#">
+                <img class="section5__opinion--arrows" src="./images/content/leftArrowCard.svg" alt="Arrow">
+              </a>
+              <p> “ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tempor erat nec urna congue
+                dapibus.
+                Etiam sollicitudin eget massa nec fringilla. Phasellus varius quam id felis accumsan volutpat. “
+              </p>
+              <a href="#">
+                <img class="section5__opinion--arrows" src="./images/content/rigthArrowCard.svg" alt="Arrow">
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
   <section id="section6">
-    <div>
-      <h2>Find Your Dream Home Today</h2>
-    </div>
-    <div>
+    <div class="container-xl section6__container">
+      <div class="section6__title--container">
+        <h2>Find Your Dream Home Today</h2>
+      </div>
       <a class="btn btn-secondary" href="#">Contact Us</a>
     </div>
   </section>
   <footer>
-    <div>
-      <div>
-        <img src="" alt="">
+    <div class="container-xl footer__container">
+      <div class="row footer__container--content">
+        <div class="col-md-6 col-lg-3 footer__about--industry">
+          <div>
+            <a href="#">
+              <img src="./images/content/footerLogo.svg" alt="Logo">
+            </a>
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, consequuntur dicta. Ut quis beatae
+            officia
+            asperiores aperiam minima repellendus. Unde, consectetur quos deserunt libero quam repellat deleniti
+            laboriosam
+            inventore sapiente?</p>
+          <ul class="nav footer__social--nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-lg-3 footer__quickLinks--container">
+          <div>
+            <div>
+              <h4><span>Quick</span> Links</h4>
+            </div>
+            <ul class="nav footer__quickLinks--nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog & Article</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Terms And Condition</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div>
+            <h4><span>News</span> Letter</h4>
+          </div>
+          <div class="footer__subscribe--form">
+            <input type="text" class="form-control" placeholder="Enter keyword" aria-label="Username">
+            <button class="btn btn-secondary">Subscribe</button>
+            <p>We never span you!</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div>
+            <h4><span>Contact</span></h4>
+          </div>
+          <ul class="nav footer__contact--nav">
+            <li class="nav-item footer__contact--li footer__contact--location">
+              <img src="./images/content/footer__locationIcon.svg" alt="Location">
+              <a class="nav-link" href="#">121
+                King St, Melbourne den 3000, Australia</a>
+            </li>
+            <li class="nav-item footer__contact--li">
+              <img src="./images/content/footer__emailIcon.svg" alt="Email">
+              <a class="nav-link" href="#">Info@example.com</a>
+            </li>
+            <li class="nav-item footer__contact--li">
+              <img src="./images/content/footer__phoneIcon.svg" alt="Phone">
+              <a class="nav-link" href="#">+91 999999999</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente, consequuntur dicta. Ut quis beatae officia
-        asperiores aperiam minima repellendus. Unde, consectetur quos deserunt libero quam repellat deleniti laboriosam
-        inventore sapiente?</p>
-      <!-- <div class="list-group">
-        <a class="list-group-item list-group-item-action" href="#">A second link item</a>
-        <a class="list-group-item list-group-item-action" href="#">A third link item</a>
-        <a class="list-group-item list-group-item-action" href="#">A fourth link item</a>
-        <a class="list-group-item list-group-item-action" href="#">A disabled link item</a>
-      </div> -->
-    </div>
-    <div>
-      <div>
-        <h4>Quick Links</h4>
-      </div>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog & Article</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Terms And Condition</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Privacy Policy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <div>
-        <h4>News Letter</h4>
-      </div>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter keyword" aria-label="Username">
-        <button class="btn btn-secondary">Subscribe</button>
-        <p>We never span you!</p>
-      </div>
-    </div>
-    <div>
-      <div>
-        <h4>Contact</h4>
-      </div>
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">121 King St, Melbourne den 3000, Australia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Info@example.com</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">+91 999999999</a>
-        </li>
-      </ul>
     </div>
   </footer>
+  <script src="https://kit.fontawesome.com/4e0ece56a4.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

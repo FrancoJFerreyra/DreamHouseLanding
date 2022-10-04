@@ -7,7 +7,7 @@
 
 // scss-docs-start gray-color-variables
 $white: #fff !default;
-$gray-100: #f8f9fa !default;
+$gray-100: #f3f3f3 !default;
 $gray-200: #ededed !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
@@ -402,7 +402,7 @@ $position-values: (
 //
 // Settings for the `<body>` element.
 
-$body-bg: $white !default;
+$body-bg: $gray-100 !default;
 $body-color: $black !default;
 $body-text-align: null !default;
 
