@@ -13,7 +13,7 @@ $blue-bg: #0b2c3d;
   background-image: url(../images/design/pageLogo.svg);
 }
 header {
-  background-image: url(../images/design/backgroundHeader.png);
+  background-image: url(../images/design/backgroundHeader.jpg);
   background-size: cover;
 }
 .subtitles__paragraphs {
@@ -296,14 +296,16 @@ header {
   border: $red-700 1px solid;
   padding: 0.625rem 1.25rem;
   border-radius: 0.1325rem;
-
+  a {
+    color: $gray-500;
+  }
   span {
     margin-right: 0.625rem;
   }
 }
 
 .section5__background {
-  background-image: url(../images/design/section5__background.png);
+  background-image: url(../images/design/section5__background.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -356,11 +358,11 @@ header {
   }
 }
 .section5__opinion--paragraph {
-  position: relative;
   text-align: center;
   display: flex;
   align-items: center;
   gap: 2.25rem;
+  background: url(../images/content/section5__quotes.svg) center no-repeat;
   p {
     font-style: italic;
     @include font-size(1.125rem);
@@ -371,14 +373,9 @@ header {
   box-shadow: 0 0.25rem 0.8125rem rgba(0, 0, 0, 0.2);
   border-radius: 100%;
 }
-.section5__quotes--background {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
 
 #section6 {
-  background-image: url(../images/design/section6__background.png);
+  background-image: url(../images/design/section6__background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -508,11 +505,6 @@ footer {
     padding-right: 0;
   }
 }
-@include media-breakpoint-up(sm) {
-  .footer__container--content {
-    flex-direction: row;
-  }
-}
 @include media-breakpoint-up(md) {
   .header__container {
     padding-bottom: 9.0625rem;
@@ -553,6 +545,9 @@ footer {
     h4 {
       text-align: start;
     }
+  }
+  .footer__container--content {
+    flex-direction: row;
   }
   .footer__about--industry {
     text-align: start;
