@@ -5,8 +5,8 @@
 
 .navbar {
   // scss-docs-start navbar-css-vars
-  --#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
-  --#{$prefix}navbar-padding-y: #{$navbar-padding-y};
+  --#{$prefix}navbar-padding-x: 1.875rem;
+  --#{$prefix}navbar-padding-y: 0.75rem;
   --#{$prefix}navbar-color: #{$navbar-light-color};
   --#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
   --#{$prefix}navbar-disabled-color: #{$navbar-light-disabled-color};
@@ -20,7 +20,9 @@
   --#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
   --#{$prefix}navbar-toggler-padding-x: #{$navbar-toggler-padding-x};
   --#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
-  --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-light-toggler-icon-bg)};
+  --#{$prefix}navbar-toggler-icon-bg: #{escape-svg(
+      $navbar-light-toggler-icon-bg
+    )};
   --#{$prefix}navbar-toggler-border-color: none;
   --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
   --#{$prefix}navbar-toggler-focus-width: none;
@@ -33,6 +35,7 @@
   align-items: center;
   justify-content: space-between; // space out brand from logo
   padding: var(--#{$prefix}navbar-padding-y) var(--#{$prefix}navbar-padding-x);
+  @include font-size(0.9375rem);
   @include gradient-bg();
 
   // Because flex properties aren't inherited, we need to redeclare these first
@@ -56,11 +59,10 @@
     }
   }
 
-  .btn{
+  .btn {
     color: var(--#{$prefix}btn-color);
   }
 }
-
 
 // Navbar brand
 //
@@ -81,7 +83,6 @@
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 }
-
 
 // Navbar nav
 //
@@ -114,7 +115,6 @@
   }
 }
 
-
 // Navbar text
 //
 //
@@ -126,11 +126,10 @@
 
   a,
   a:hover,
-  a:focus  {
+  a:focus {
     color: var(--#{$prefix}navbar-active-color);
   }
 }
-
 
 // Responsive navbar
 //
@@ -150,12 +149,14 @@
 
 // Button for toggling the navbar when in its collapsed state
 .navbar-toggler {
-  padding: var(--#{$prefix}navbar-toggler-padding-y) var(--#{$prefix}navbar-toggler-padding-x);
+  padding: var(--#{$prefix}navbar-toggler-padding-y)
+    var(--#{$prefix}navbar-toggler-padding-x);
   @include font-size(var(--#{$prefix}navbar-toggler-font-size));
   line-height: 1;
   color: var(--#{$prefix}navbar-color);
   background-color: transparent; // remove default button style
-  border: var(--#{$prefix}border-width) solid var(--#{$prefix}navbar-toggler-border-color); // remove default button style
+  border: var(--#{$prefix}border-width) solid
+    var(--#{$prefix}navbar-toggler-border-color); // remove default button style
   @include border-radius(var(--#{$prefix}navbar-toggler-border-radius));
   @include transition(var(--#{$prefix}navbar-toggler-transition));
 
@@ -265,7 +266,7 @@
 // Styles for switching between navbars with light or dark background.
 
 .navbar-light {
-  @include deprecate("`.navbar-light`", "v5.2.0", "v6.0.0", true);
+  @include deprecate('`.navbar-light`', 'v5.2.0', 'v6.0.0', true);
 }
 
 .navbar-dark {
